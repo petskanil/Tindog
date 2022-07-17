@@ -3,15 +3,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
 h1 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 h3 {
@@ -23,13 +24,17 @@ p {
     color: #8f8f8f;
 }
 
-
-
 .container-fluid{
-    padding: 3% 15%;
+    padding: 7% 15% 10%;
 }
 
 
+/* Title */
+#title {
+    background-color: #ff4c68;
+    color: white;
+    position: relative;
+}
 
 /* Navigation bar */
 .navbar-brand {
@@ -60,13 +65,30 @@ p {
 
 /* Title image */
 .title-image {
-    width: 60%;
+    width: 20%;
     transform: rotate(20deg);
+    position: absolute;
+    right: 25%;
+}
+
+@media (max-width: 990px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        width: 60%;
+        transform: rotate(0deg);
+    }
+    
 }
 
 /* Features */
 #features {
-    padding: 3% 15%;
+    /* padding: 7% 15%; */
+    background-color: white;
+    position: relative;
 }
 
 .feature-entry {
@@ -74,12 +96,75 @@ p {
     padding: 5px 80px;
 }
 
-.fa-solid {
+.feature-logo {
     color: #ef8172;
     font-size: 4rem;
     margin: 5% 0 3% 0;    
 }
 
-.fa-solid:hover {
+.feature-logo:hover {
     color: #ff4c68;
+}
+
+/* Testimonial */
+
+#testimonials {
+    
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+.testimonial-img {
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#carousel-testimonials {
+    padding: 7% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* Cta */
+
+#cta {
+    padding: 7% 15%;
+    font-weight: 900;
+    color: white;
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    background-color: white;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.footer-icon {
+    margin: 5px;
 }
